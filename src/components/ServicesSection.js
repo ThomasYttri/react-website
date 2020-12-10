@@ -5,14 +5,17 @@ import money from "../img/money.svg";
 import teamwork from "../img/money.svg";
 //Images
 import home2 from "../img/home2.png";
+//Styles
+import styled from 'styled-components';
+import {About, Description, Image} from "../styles";
 
 const ServicesSection = () => {
     return (
-        <div className="services">
-            <div className="description">
+        <About>
+            <Description>
                 <h2>High <span>quality</span> services.</h2>
-            </div>
-            <div className="cards">
+            </Description>
+            <div>
                 <div className="card">
                     <div className="icon">
                         <img src={clock} alt="Clock icon"/>
@@ -42,11 +45,28 @@ const ServicesSection = () => {
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
-            <div className="image">
+            <Image>
                 <img src={home2} alt="Camera"/>
-            </div>
-        </div>
+            </Image>
+        </About>
     )
 }
+
+// const Services = styled(About)`
+//     display: flex;
+//     h2 {
+//         padding-bottom: 5rem;
+//     }
+//     p {
+//         width: 70%;
+//         padding: 2rem 0rem 4rem 0rem;
+//     }
+// `;
+
+// const Cards = styled.div`
+//     display: flex;
+//     /* flex-basis: 100%; */
+//     flex-wrap: wrap;
+// `;
 
 export default ServicesSection;
