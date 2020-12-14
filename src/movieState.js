@@ -11,7 +11,9 @@ export const MovieState = () => {
         {
             title: "The Athlete",
             mainImg: athlete,
+            mainImgAlt: "A man resting on the boxingring ropes, wearing boxinggloves" ,
             secondaryImg: athlete2,
+            mainSecondaryAlt: "Two men resting in a boxingring, wearing boxing equipment" ,
             url: "/work/the-athlete",
             awards: [
                 {
@@ -32,8 +34,10 @@ export const MovieState = () => {
         },    {
             title: "Good Times",
             mainImg: goodtimes,
+            mainImgAlt: "A man and woman hugging under a tree." ,
             url: "/work/good-times",
             secondaryImg: goodtimes2,
+            mainSecondaryAlt: "A man and a woman hiding from the rain under the mans jacket." ,
             awards: [
             {
                 title: "Truly A masterpiece",
@@ -55,8 +59,10 @@ export const MovieState = () => {
           {
             title: "The Racer",
             mainImg: theracer,
+            mainImgAlt: "A woman leaning on a old, yellow race car." ,
             url: "/work/the-racer",
             secondaryImg: theracer2,
+            mainSecondaryAlt: "A man riding an Aprilla motorcycle on the track, wearing full track gear" ,
             awards: [
             {
                 title: "Truly A masterpiece",
