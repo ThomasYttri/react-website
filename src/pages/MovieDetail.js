@@ -59,7 +59,6 @@ const Award = ({title, description }) => {
     )
 }
 
-
 //Styled
 const Details = styled(motion.div)`
     color: white;
