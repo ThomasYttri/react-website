@@ -41,7 +41,7 @@ const StyledNav = styled.nav`
         position: relative;
     }
     #logo {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-family: "Lobster", cursive;
         font-weight: lighter;
     }
