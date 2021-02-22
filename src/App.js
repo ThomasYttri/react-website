@@ -5,6 +5,8 @@ import ContactUs from "./pages/ContactUs";
 import MovieDetail from "./pages/MovieDetail";
 //Components
 import Nav from "./components/Nav";
+// Scroll component
+import ScrollTop from "./components/ScrollTop";
 //Global style
 import GlobalStyle from "./components/GlobalStyle";
 //Router
@@ -14,7 +16,6 @@ import {AnimatePresence} from "framer-motion";
 
 function App() {
   const location = useLocation();
-  console.log(location);
   return (
     <div className="App">
       <GlobalStyle />

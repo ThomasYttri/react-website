@@ -6,6 +6,7 @@ import {MovieState} from "../movieState";
 //Animation
 import {motion} from "framer-motion";
 import {pageAnimation} from "../animation";
+import ScrollTop from "../components/ScrollTop";
 
 const MovieDetail = () => {
     const history = useHistory();
@@ -42,6 +43,7 @@ const MovieDetail = () => {
             <ImageDisplay>
                 <img src={movie.secondaryImg} alt={movie.secondaryImgAlt}/>
             </ImageDisplay>
+            <ScrollTop />
         </Details>
         )}
         </>
@@ -67,11 +69,12 @@ const Details = styled(motion.div)`
 const Headline = styled.div`
     min-height: 90vh;
     padding-top: 20vh;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     h2 {
         position: absolute;
-        top: 10%;
-        left: 50%;
+        top: 25%;
         transform: translate()(-50%, -10%);
     }
     img {
@@ -87,6 +90,10 @@ const Awards = styled.div`
     margin: 5rem 10rem;
     align-items: center;
     justify-content: space-around;
+    @media (max-width: 1300px) {
+        padding: 2rem;
+        display: block;
+    }
 `
 
 const AwardStyle = styled.div`

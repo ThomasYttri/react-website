@@ -10,12 +10,13 @@ import goodtimes from "../img/goodtimes-small.png";
 import {motion} from "framer-motion";
 import {pageAnimation, fade, photoAnim, lineAnim, slider, sliderContainer} from "../animation";
 import {useScroll} from "../components/useScroll";
+import ScrollTop from "../components/ScrollTop";
 
 const OurWork = () => {
     const [element, controls] = useScroll();
     const [element2, controls2] = useScroll();
     return(
-        <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit" style={{background:"#fff"}}>
+        <Work variants={pageAnimation} initial="hidden" animate="show" exit="exit">
             <motion.div variants={sliderContainer}>
                 <Frame1 variants={slider}></Frame1>
                 <Frame2 variants={slider}></Frame2>
@@ -45,6 +46,7 @@ const OurWork = () => {
                     <img src={goodtimes} alt="Couple standing under a three whilst holding each other."/>
                 </Link>
             </Movie>
+            <ScrollTop />
         </Work>
     )
 }
@@ -53,8 +55,13 @@ const Work = styled(motion.div)`
     min-height: 100vh;
     overflow: hidden;
     padding: 5rem 10rem;
+    background: #fff;
     h2 {
         padding: 1rem 0rem;
+    }
+
+    @media (max-width: 1300px) {
+        padding: 2rem 2rem;
     }
 `;
 
